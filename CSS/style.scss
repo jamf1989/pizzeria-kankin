@@ -1,0 +1,58 @@
+/*
+1. Posicionamiento
+2. Modelo caja (Box model)
+3. Tipografia
+4. Visuales
+5. Otros
+*/
+
+$color-primario: #F3C186;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    width: 100%;
+    height: 95px;
+    background-color: $color-primario;
+}
+
+.header {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    &-titulo {
+        width: 100%;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .logo {
+            width: 75px;
+            height: 70px;
+        }
+        .nombre {
+            width: 230px;
+            height: 35px;
+        }
+    }
+    &-nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        li a {
+            color: black;
+            text-decoration: none;
+            border-left: 1px solid black;
+        }
+    }
+}
