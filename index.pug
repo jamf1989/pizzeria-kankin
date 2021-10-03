@@ -4,12 +4,15 @@ html(lang="es")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap" rel="stylesheet">
         link(rel="stylesheet", href="/CSS/style.css")
         title Pizzeria K'an'in
     body
         header.header
             section.header-titulo 
-                    img.logo(src="./img´s/logo.png", alt="logo pizzeria")
+                    img.logo(src="./imgs/logo.png", alt="logo pizzeria")
                     img.nombre(src="./asset/nombre.svg", alt="nombre pizzeria")
             section.header-nav 
                 nav.header-nav_enlaces
@@ -18,3 +21,11 @@ html(lang="es")
                         li: a(href="/") OVNI'S     
                         li: a(href="/") ARMA TU PIZZA   
                         li: a(href="/") PROMOCIONES
+        main.main 
+            section.main-pizzas
+                article.pizza
+                    div.pizza-nombre 
+                        p PIZZA PP
+                        p Queso y pepperoni
+                    div.pizza-precio
+                        P $89
