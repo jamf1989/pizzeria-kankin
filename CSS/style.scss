@@ -77,8 +77,26 @@ html {
     width: 100%;
     height: 100vh;
     background-image: url('/imgs/fondomovil.jpg');
-    background-size:contain;
+    background-repeat: repeat;
     opacity: .80;
+    &-titulo {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .izamal {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            .icono {
+                background: url('/asset/like.svg');
+                width: 15px;
+                height: 15px;
+                
+            }
+        }
+    }
     &-pizzas {
         width: 95%;
         height: 100%;
