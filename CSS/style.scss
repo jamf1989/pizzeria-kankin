@@ -11,6 +11,21 @@ $border-pizza: #f35a18;
 $color-fondo: #fae9b5;
 $opacity: .50;
 
+/*@function rad($number){
+    @return $number * 3.141592 / 180;
+}
+
+@function explosion($number,$radio) {
+    $angle: 360 / $number;
+    $text-shadow: '';
+    @for $i from 0 through $number {
+        $text-shadow: $text-shadow + $radio * cos(rad($angle * $i)) + ' ' + $radio * sin(rad($angle * $i));
+        @if $i < $number { $text-shadow: $text-shadow + ','}
+    }
+
+    @return unquote($text-shadow)
+
+}*/
 
 * {
     margin: 0;
@@ -82,19 +97,27 @@ html {
     &-titulo {
         width: 95%;
         margin: 0 auto;
+        padding-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
         .izamal {
             width: 100%;
             display: flex;
-            justify-content: space-around;
-            .icono {
-                background: url('/asset/like.svg');
-                width: 15px;
-                height: 15px;
-                
+            justify-content: space-evenly;
+            h1 {
+                font-size: 1.6rem;
+                font-weight: 900;
             }
+            .fas {
+                font-size: 2.5rem;
+                color: yellow;
+                /*text-shadow: explosion(50, 100px);*/
+            }
+        }
+        .frase {
+            font-size: 1.3rem;
+            font-weight: 600;
         }
     }
     &-pizzas {

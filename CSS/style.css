@@ -5,6 +5,21 @@
 4. Visuales
 5. Otros
 */
+/*@function rad($number){
+    @return $number * 3.141592 / 180;
+}
+
+@function explosion($number,$radio) {
+    $angle: 360 / $number;
+    $text-shadow: '';
+    @for $i from 0 through $number {
+        $text-shadow: $text-shadow + $radio * cos(rad($angle * $i)) + ' ' + $radio * sin(rad($angle * $i));
+        @if $i < $number { $text-shadow: $text-shadow + ','}
+    }
+
+    @return unquote($text-shadow)
+
+}*/
 * {
   margin: 0;
   padding: 0;
@@ -86,6 +101,7 @@ html {
 .main-titulo {
   width: 95%;
   margin: 0 auto;
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,13 +118,22 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
-.main-titulo .izamal .icono {
-  background: url("/asset/like.svg");
-  width: 15px;
-  height: 15px;
+.main-titulo .izamal h1 {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+.main-titulo .izamal .fas {
+  font-size: 2.5rem;
+  color: yellow;
+  /*text-shadow: explosion(50, 100px);*/
+}
+.main-titulo .frase {
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 .main-pizzas {
   width: 95%;
