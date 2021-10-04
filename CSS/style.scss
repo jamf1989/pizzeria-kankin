@@ -97,7 +97,7 @@ html {
     &-titulo {
         width: 95%;
         margin: 0 auto;
-        padding-top: 20px;
+        padding: 20px 0 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -127,8 +127,7 @@ html {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /*padding-top: 10px;*/
-        &:before {
+        &::before {
             content: '';
             position: absolute;
             width: 95%;
@@ -137,39 +136,41 @@ html {
             opacity: $opacity;
             border-radius: 10px;
         }
-        .pizza {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            width: 240px;
-            height: auto;
-            border: 2PX solid $border-pizza;
-            border-radius: 10PX;
-            margin-top: 20px;
-            padding: 5px;
-            &-nombre {
-                width: 100%;
+        &_container {
+            z-index: 2;
+            .pizza {
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
-                font-size: 2rem;
-                font-weight: 900;
-                text-align: center;
-            }
-    
-            &-ingredientes {
-                font-size: 1.5rem;
-                font-weight: 600;
-                text-align: center;
+                flex-direction: column;
+                width: 240px;
+                height: auto;
+                border: 2PX solid $border-pizza;
+                border-radius: 10PX;
+                margin: 20px 5px 0;
+                padding: 5px;
+                &-nombre {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 2rem;
+                    font-weight: 900;
+                    text-align: center;
+                }
+        
+                &-ingredientes {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    text-align: center;
+                }
             }
         }
     }
 }
 
-.main-pizzas article:nth-child(odd){
+/*.main-pizzas article:nth-child(odd){
     align-items: left;
-}
+}*/
 
-.main-pizzas article:nth-child(even){
-    align-items: right;
+.main-pizzas_container article:nth-child(even){
+    align-self: end;
 }

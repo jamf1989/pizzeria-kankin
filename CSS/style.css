@@ -101,7 +101,7 @@ html {
 .main-titulo {
   width: 95%;
   margin: 0 auto;
-  padding-top: 20px;
+  padding: 20px 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,9 +149,8 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /*padding-top: 10px;*/
 }
-.main-pizzas:before {
+.main-pizzas::before {
   content: "";
   position: absolute;
   width: 95%;
@@ -160,8 +159,10 @@ html {
   opacity: 0.5;
   border-radius: 10px;
 }
-.main-pizzas .pizza {
-  position: relative;
+.main-pizzas_container {
+  z-index: 2;
+}
+.main-pizzas_container .pizza {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,10 +174,10 @@ html {
   height: auto;
   border: 2PX solid #f35a18;
   border-radius: 10PX;
-  margin-top: 20px;
+  margin: 20px 5px 0;
   padding: 5px;
 }
-.main-pizzas .pizza-nombre {
+.main-pizzas_container .pizza-nombre {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,20 +192,17 @@ html {
   font-weight: 900;
   text-align: center;
 }
-.main-pizzas .pizza-ingredientes {
+.main-pizzas_container .pizza-ingredientes {
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
 }
 
-.main-pizzas article:nth-child(odd) {
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-}
-
-.main-pizzas article:nth-child(even) {
-  -webkit-box-align: right;
-      -ms-flex-align: right;
-          align-items: right;
+/*.main-pizzas article:nth-child(odd){
+    align-items: left;
+}*/
+.main-pizzas_container article:nth-child(even) {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
