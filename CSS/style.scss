@@ -106,7 +106,7 @@ html {
             display: flex;
             justify-content: space-evenly;
             h1 {
-                font-size: 1.6rem;
+                font-size: 1.8rem;
                 font-weight: 900;
             }
             .fas {
@@ -116,7 +116,7 @@ html {
             }
         }
         .frase {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             font-weight: 600;
         }
     }
@@ -182,7 +182,7 @@ html {
             content: '';
             position: absolute;
             width: 95%;
-            height: 1384px;
+            height: 1466px;
             background-color: $color-fondo;
             opacity: $opacity;
             border-radius: 10px;
@@ -195,6 +195,24 @@ html {
             display: flex;
             flex-direction: column;
             padding: 5px;
+            .main-ovnis_titulo {
+                width: 95%;
+                margin: 0 auto;
+                padding: 20px 0 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2 {
+                    font-size: 1.8rem;
+                    font-weight: 900;
+                    border-bottom: 1px solid black;
+                }
+                p {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    text-align: center;
+                }   
+            }
             .ovnis {
                 display: flex;
                 flex-direction: column;

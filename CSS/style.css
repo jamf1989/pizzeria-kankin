@@ -123,7 +123,7 @@ html {
           justify-content: space-evenly;
 }
 .main-titulo .izamal h1 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 900;
 }
 .main-titulo .izamal .fas {
@@ -132,7 +132,7 @@ html {
   /*text-shadow: explosion(50, 100px);*/
 }
 .main-titulo .frase {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 .main-pizzas {
@@ -227,7 +227,7 @@ html {
   content: "";
   position: absolute;
   width: 95%;
-  height: 1384px;
+  height: 1466px;
   background-color: #fae9b5;
   opacity: 0.5;
   border-radius: 10px;
@@ -245,6 +245,31 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 5px;
+}
+.main-ovnis_container .main-ovnis_titulo {
+  width: 95%;
+  margin: 0 auto;
+  padding: 20px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-ovnis_container .main-ovnis_titulo h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  border-bottom: 1px solid black;
+}
+.main-ovnis_container .main-ovnis_titulo p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
 }
 .main-ovnis_container .ovnis {
   display: -webkit-box;
