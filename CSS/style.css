@@ -32,6 +32,14 @@ html {
   font-family: "Baloo 2", cursive;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .header {
   width: 100%;
   height: 95px;
@@ -79,13 +87,11 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  list-style: none;
 }
 .header-nav_enlaces ul li a {
   font-size: 1.3rem;
   font-weight: 600;
   color: black;
-  text-decoration: none;
 }
 .header-nav_enlaces ul li a::after {
   content: " | ";
@@ -317,4 +323,66 @@ html {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+}
+
+.footer {
+  width: 100%;
+  height: 95px;
+  padding-top: 10px;
+  background-color: #F3C186;
+  border-top: 2px solid black;
+}
+.footer-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 95%;
+  height: 60px;
+  margin: 0 auto;
+}
+.footer-link ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer-link .fa-facebook-square {
+  font-size: 2.5rem;
+  color: #f35a18;
+}
+.footer-link .fas {
+  font-size: 1.2rem;
+  color: black;
+}
+.footer-link .fa-map-marker-alt {
+  font-size: 1.5rem;
+  color: #f35a18;
+}
+.footer-link .footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer-link .footer-logo .logo {
+  width: 50px;
+  height: 50px;
+}
+.footer-link .footer-logo .nombre {
+  width: 150px;
+  height: 25px;
 }
