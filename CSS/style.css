@@ -233,7 +233,7 @@ a {
   content: "";
   position: absolute;
   width: 95%;
-  height: 1466px;
+  height: 1410px;
   background-color: #fae9b5;
   opacity: 0.5;
   border-radius: 10px;
@@ -330,7 +330,7 @@ a {
   height: 95px;
   padding-top: 10px;
   background-color: #F3C186;
-  border-top: 2px solid black;
+  border-top: 2px solid #f35a18;
 }
 .footer-link {
   display: -webkit-box;
@@ -385,4 +385,30 @@ a {
 .footer-link .footer-logo .nombre {
   width: 150px;
   height: 25px;
+}
+.footer-dev {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+.footer-dev_section {
+  width: 95%;
+  height: 50px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer-dev_section div {
+  color: white;
+  font-size: 1.4rem;
+}
+.footer-dev_section .fa-laptop-code {
+  color: white;
 }
