@@ -134,6 +134,7 @@ a {
         justify-content: center;
         &::before {
             content: '';
+            /*background-image: url('/imgS/ingredientes.png');*/
             position: absolute;
             width: 95%;
             height: 1442px;
@@ -185,6 +186,7 @@ a {
         justify-content: center;
         &::before {
             content: '';
+            background-image: url('/imgS/ingredientes.png');
             position: absolute;
             width: 95%;
             height: 1410px;
