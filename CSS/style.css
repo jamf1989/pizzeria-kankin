@@ -141,80 +141,6 @@ a {
   font-size: 1.5rem;
   font-weight: 600;
 }
-.main-pizzas {
-  width: 95%;
-  height: 100%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.main-pizzas::before {
-  content: "";
-  /*background-image: url('/imgS/ingredientes.png');*/
-  position: absolute;
-  width: 95%;
-  height: 1442px;
-  background-color: #fae9b5;
-  opacity: 0.5;
-  border-radius: 10px;
-}
-.main-pizzas_container {
-  z-index: 2;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 500PX;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 5px;
-}
-.main-pizzas_container .pizza {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 240px;
-  height: auto;
-  border: 2PX solid #f35a18;
-  border-radius: 10PX;
-  margin: 10px 0;
-  padding: 5px;
-}
-.main-pizzas_container .pizza-nombre {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 2rem;
-  font-weight: 900;
-  text-align: center;
-}
-.main-pizzas_container .pizza-ingredientes {
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-align: center;
-}
 .main-ovnis {
   width: 95%;
   height: 100%;
@@ -313,12 +239,6 @@ a {
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
-}
-
-.main-pizzas_container article:nth-child(even) {
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
 }
 
 .main-ovnis_container article:nth-child(even) {
