@@ -10,6 +10,7 @@ $color-primario: #F3C186;
 $border-pizza: #f35a18;
 $color-fondo: #fae9b5;
 $opacity: .50;
+$fonfo-pizzas: rgba(255, 103, 1, 0.6);
 
 /*@function rad($number){
     @return $number * 3.141592 / 180;
@@ -201,6 +202,56 @@ a {
 .main-ovnis_container article:nth-child(even){
     align-self: end;
 }
+
+.main-pizzas {
+    width: 95%;
+    height: 100vh;
+    margin: 10px auto 0;
+    &_container {
+        width: 100%;
+        height: 100%;
+        .pizza {
+            position: absolute;
+            width: 300px;
+            height: 150px;
+            display: flex;
+            align-items: flex-end;
+            &-img {
+                position: relative;
+                width: 40px;
+                height: 140px;
+                z-index: 2;
+            }
+            &-container {
+                position: relative;
+                width: 250px;
+                height: 100px;
+                padding: 5px 5px 5px 10px;
+                left: -19px;
+                border-top: 2px solid black;
+                border-bottom: 2px solid black;
+                border-right: 2px solid black;
+                border-radius: 5px;
+                background-color: $fonfo-pizzas;
+                z-index: 1;
+                .pizza-nombre {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 1.8rem;
+                    font-weight: 900;
+                }
+                .pizza-ingredientes {
+                    font-size: 1.6rem;
+                    font-weight: 900;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+
+
 
 .footer {
     width: 100%;
