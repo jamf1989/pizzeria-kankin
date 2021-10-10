@@ -205,7 +205,7 @@ a {
 
 .main-pizzas {
     width: 95%;
-    height: 100vh;
+    height: auto;
     margin: 10px auto 0;
     &_container {
         width: 100%;
@@ -215,17 +215,19 @@ a {
             height: 150px;
             display: flex;
             align-items: flex-end;
+            margin-bottom: 10px;
             &-img {
                 position: relative;
                 width: 40px;
-                height: 140px;
+                height: 150px;
                 z-index: 2;
             }
             &-container {
                 position: relative;
                 width: 260px;
                 height: auto;
-                padding: 5px 5px 5px 10px;
+                max-height: 75%;
+                padding: 3px 3px 3px 10px;
                 left: -19px;
                 border-top: 2px solid black;
                 border-bottom: 2px solid black;

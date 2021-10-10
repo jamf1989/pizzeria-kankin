@@ -249,7 +249,7 @@ a {
 
 .main-pizzas {
   width: 95%;
-  height: 100vh;
+  height: auto;
   margin: 10px auto 0;
 }
 .main-pizzas_container {
@@ -265,18 +265,20 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin-bottom: 10px;
 }
 .main-pizzas_container .pizza-img {
   position: relative;
   width: 40px;
-  height: 140px;
+  height: 150px;
   z-index: 2;
 }
 .main-pizzas_container .pizza-container {
   position: relative;
   width: 260px;
   height: auto;
-  padding: 5px 5px 5px 10px;
+  max-height: 75%;
+  padding: 3px 3px 3px 10px;
   left: -19px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
