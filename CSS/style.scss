@@ -134,16 +134,16 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        &::before {
+        /*&::before {
             content: '';
-            background-image: url('/imgS/ingredientes.png');
+            background-image: url('');
             position: absolute;
             width: 95%;
             height: 1410px;
             background-color: $color-fondo;
             opacity: $opacity;
             border-radius: 10px;
-        }
+        }*/
         &_container {
             z-index: 2;
             width: 100%;
@@ -169,31 +169,6 @@ a {
                     font-weight: 600;
                     text-align: center;
                 }   
-            }
-            .ovnis {
-                display: flex;
-                flex-direction: column;
-                width: 240px;
-                height: auto;
-                border: 2PX solid $border-pizza;
-                border-radius: 10PX;
-                margin: 10px 0;
-                padding: 5px;
-                &-nombre {
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    font-size: 2rem;
-                    font-weight: 900;
-                    text-align: center;
-                }
-        
-                &-ingredientes {
-                    font-size: 1.5rem;
-                    font-weight: 600;
-                    text-align: center;
-                }
             }
         }
     }
@@ -270,6 +245,34 @@ a {
     }
 }
 
+.ovnis {
+    width: 300px;
+    display: flex;    
+    height: auto;
+    img {
+        width: 80px;
+        height: 70px;
+    }
+    &-container {
+        background: $fonfo-pizzas;
+        border-radius: 5%;
+    }
+    &-nombre {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    &-ingredientes {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+    }
+}
 
 
 

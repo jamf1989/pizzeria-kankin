@@ -155,16 +155,16 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-.main-ovnis::before {
-  content: "";
-  background-image: url("/imgS/ingredientes.png");
-  position: absolute;
-  width: 95%;
-  height: 1410px;
-  background-color: #fae9b5;
-  opacity: 0.5;
-  border-radius: 10px;
+  /*&::before {
+      content: '';
+      background-image: url('');
+      position: absolute;
+      width: 95%;
+      height: 1410px;
+      background-color: $color-fondo;
+      opacity: $opacity;
+      border-radius: 10px;
+  }*/
 }
 .main-ovnis_container {
   z-index: 2;
@@ -201,41 +201,6 @@ a {
   border-bottom: 1px solid black;
 }
 .main-ovnis_container .main-ovnis_titulo p {
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-align: center;
-}
-.main-ovnis_container .ovnis {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 240px;
-  height: auto;
-  border: 2PX solid #f35a18;
-  border-radius: 10PX;
-  margin: 10px 0;
-  padding: 5px;
-}
-.main-ovnis_container .ovnis-nombre {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 2rem;
-  font-weight: 900;
-  text-align: center;
-}
-.main-ovnis_container .ovnis-ingredientes {
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
@@ -324,6 +289,42 @@ a {
 .main-pizzas_container .pizza-container .pizza-ingredientes {
   font-size: 1.6rem;
   font-weight: bold;
+  text-align: center;
+}
+
+.ovnis {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+}
+.ovnis img {
+  width: 80px;
+  height: 70px;
+}
+.ovnis-container {
+  background: rgba(255, 103, 1, 0.6);
+  border-radius: 5%;
+}
+.ovnis-nombre {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+}
+.ovnis-ingredientes {
+  font-size: 1.5rem;
+  font-weight: 600;
   text-align: center;
 }
 
