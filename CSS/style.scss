@@ -137,36 +137,36 @@ a {
         justify-content: center;*/
         &::before {
             content: '';
-            background-image: url('');
             position: absolute;
             width: 95%;
-            height: 1280px;
+            height: 1493px;
             background-color: $color-fondo;
             opacity: $opacity;
             border-radius: 10px;
         }
-        .main-ovnis_titulo {
-            width: 95%;
-            margin: 0 auto;
-            padding: 20px 0 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            h2 {
-                font-size: 1.8rem;
-                font-weight: 900;
-                border-bottom: 2px solid black;
-            }
-            p {
-                font-size: 1.5rem;
-                font-weight: 600;
-                text-align: center;
-            }   
-        }
         &_container {
+            position: relative;
             width: 100%;
             margin: 0 auto;
             padding: 5px;
+            .main-ovnis_titulo {
+                width: 95%;
+                margin: 0 auto;
+                padding: 20px 0 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2 {
+                    font-size: 1.8rem;
+                    font-weight: 900;
+                    border-bottom: 2px solid black;
+                }
+                p {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    text-align: center;
+                }   
+            }
         }
     }
 }
@@ -247,6 +247,7 @@ a {
     display: flex;    
     height: auto;
     align-items: flex-end;
+    margin-bottom: 15px;
     img {
         width: 80px;
         height: 60px;
