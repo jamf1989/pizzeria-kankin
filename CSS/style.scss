@@ -37,6 +37,7 @@ $fonfo-pizzas: rgba(255, 103, 1, 0.6);
 html {
     font-size: 62.5%;
     font-family: 'Baloo 2', cursive;
+    min-width: 320px;
 }
 
 ul {
@@ -131,45 +132,41 @@ a {
         width: 95%;
         height: 100%;
         margin: 10px auto 0;
-        display: flex;
+        /*display: flex;
         flex-direction: column;
-        justify-content: center;
-        /*&::before {
+        justify-content: center;*/
+        &::before {
             content: '';
             background-image: url('');
             position: absolute;
             width: 95%;
-            height: 1410px;
+            height: 1280px;
             background-color: $color-fondo;
             opacity: $opacity;
             border-radius: 10px;
-        }*/
-        &_container {
-            z-index: 2;
-            width: 100%;
+        }
+        .main-ovnis_titulo {
+            width: 95%;
             margin: 0 auto;
-            max-width: 500PX;
+            padding: 20px 0 10px;
             display: flex;
             flex-direction: column;
-            padding: 5px;
-            .main-ovnis_titulo {
-                width: 95%;
-                margin: 0 auto;
-                padding: 20px 0 10px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                h2 {
-                    font-size: 1.8rem;
-                    font-weight: 900;
-                    border-bottom: 1px solid black;
-                }
-                p {
-                    font-size: 1.5rem;
-                    font-weight: 600;
-                    text-align: center;
-                }   
+            align-items: center;
+            h2 {
+                font-size: 1.8rem;
+                font-weight: 900;
+                border-bottom: 2px solid black;
             }
+            p {
+                font-size: 1.5rem;
+                font-weight: 600;
+                text-align: center;
+            }   
+        }
+        &_container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 5px;
         }
     }
 }
@@ -249,28 +246,36 @@ a {
     width: 300px;
     display: flex;    
     height: auto;
+    align-items: flex-end;
     img {
         width: 80px;
-        height: 70px;
+        height: 60px;
+        z-index: 2;
+
     }
     &-container {
+        position: relative;
+        padding: 5px;
         background: $fonfo-pizzas;
-        border-radius: 5%;
+        left: -40px;
+        border: 2px solid black;
+        border-radius: 10px;
     }
     &-nombre {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 900;
         text-align: center;
     }
 
     &-ingredientes {
-        font-size: 1.5rem;
+        padding-left: 35px;
+        font-size: 1.6rem;
         font-weight: 600;
-        text-align: center;
+        text-align: left;
     }
 }
 
