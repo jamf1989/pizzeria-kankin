@@ -132,12 +132,12 @@ a {
         width: 95%;
         height: 100%;
         margin: 10px auto 0;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
         &::before {
             content: '';
             position: absolute;
             width: 95%;
-            height: 1493px;
+            height: 1490px;
             background-color: $color-fondo;
             opacity: $opacity;
             border-radius: 10px;
@@ -285,7 +285,7 @@ a {
 
 .footer {
     width: 100%;
-    height: 95px;
+    height: auto;
     padding-top: 10px;
     background-color: $color-primario;
     border-top: 2px solid $border-pizza;
@@ -330,21 +330,39 @@ a {
     }
     &-dev {
         width: 100%;
-        height: 50px;
+        height: 100%;
         background-color: black;
         &_section {
             width: 95%;
-            height: 50px;
+            height: 100%;
             margin: 0 auto;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             div {
+                margin-top: 10px;
                 color: white;
                 font-size: 1.4rem;
+                z-index: 2;
             }
             .fa-laptop-code{
                 color: white;
+            }
+            .cont-kukulkan{
+                position: relative;
+                top: -35px;
+                perspective: 100px;
+                width: 100px;
+                height: 50px;
+                z-index: 1;
+                .kukulkan {
+                    position: absolute;
+                    width: 100px;
+                    height: auto;
+                    transform-style: preserve-3d;
+                    transform: rotatex(47deg);
+                }
             }
         }
     }
