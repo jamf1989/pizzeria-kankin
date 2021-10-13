@@ -248,6 +248,7 @@ a {
 
 .img-pizzas{
     position: absolute;
+    width: 100%;
     display: flex;
     flex-direction: column;
     right: 0;
@@ -257,6 +258,14 @@ a {
         height: auto;
         margin: 15px 0;
     }
+    img:nth-child(odd) {
+       justify-content: right;
+       align-content: flex-end;
+    }
+    img:nth-child(even) {
+        justify-content: left;
+        align-content: flex-start;
+     }
 }
 
 .ovnis {

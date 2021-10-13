@@ -290,6 +290,7 @@ a {
 
 .img-pizzas {
   position: absolute;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,6 +305,20 @@ a {
   width: 250px;
   height: auto;
   margin: 15px 0;
+}
+.img-pizzas img:nth-child(odd) {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+.img-pizzas img:nth-child(even) {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
 .ovnis {
