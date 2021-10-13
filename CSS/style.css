@@ -203,6 +203,7 @@ a {
   width: 95%;
   height: auto;
   margin: 0 auto 50px;
+  position: relative;
 }
 .main-pizzas::before {
   content: "";
@@ -212,6 +213,7 @@ a {
   background-color: #fae9b5;
   opacity: 0.5;
   border-radius: 10px;
+  z-index: 2;
 }
 .main-pizzas_container {
   position: relative;
@@ -229,6 +231,7 @@ a {
   height: 100%;
   margin: 0 auto;
   padding: 5px 0 0;
+  z-index: 3;
 }
 .main-pizzas_container .pizza {
   width: 300px;
@@ -283,6 +286,24 @@ a {
   font-size: 1.6rem;
   font-weight: bold;
   text-align: center;
+}
+
+.img-pizzas {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 0;
+  z-index: 1;
+}
+.img-pizzas img {
+  width: 250px;
+  height: auto;
+  margin: 15px 0;
 }
 
 .ovnis {
