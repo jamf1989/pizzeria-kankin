@@ -146,7 +146,7 @@ a {
   width: 95%;
   height: 100%;
   margin: 10px auto 0;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 .main-ovnis::before {
   content: "";
@@ -298,7 +298,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  right: 0;
+  /*right: 0;*/
   z-index: 1;
 }
 .img-pizzas img {
@@ -307,18 +307,12 @@ a {
   margin: 15px 0;
 }
 .img-pizzas img:nth-child(odd) {
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 .img-pizzas img:nth-child(even) {
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .ovnis {
