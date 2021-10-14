@@ -106,7 +106,7 @@ a {
   opacity: 0.8;
 }
 .main-titulo {
-  width: 95%;
+  width: 320px;
   margin: 0 auto;
   padding: 20px 0 10px;
   display: -webkit-box;
@@ -232,6 +232,12 @@ a {
   margin: 0 auto;
   padding: 5px 0 0;
   z-index: 3;
+}
+.main-pizzas_container .p {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 1rem;
+  border-bottom: 1px solid black;
 }
 .main-pizzas_container .pizza {
   width: 300px;

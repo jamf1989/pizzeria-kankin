@@ -102,7 +102,7 @@ a {
     background-repeat: repeat;
     opacity: .80;
     &-titulo {
-        width: 95%;
+        width: 320px;
         margin: 0 auto;
         padding: 20px 0 10px;
         display: flex;
@@ -197,6 +197,12 @@ a {
         margin: 0 auto;
         padding: 5px 0 0;
         z-index: 3;
+        .p {
+            font-size: 1.8rem;
+            font-weight: 900;
+            letter-spacing: 1rem;
+            border-bottom: 1px solid black;
+        }
         .pizza {
             width: 300px;
             height: auto;
