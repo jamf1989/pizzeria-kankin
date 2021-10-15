@@ -9,6 +9,7 @@ html(lang="es")
         <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/09ed2e842d.js" crossorigin="anonymous"></script>
         link(rel="stylesheet", href="/CSS/style.css")
+        link(rel="stylesheet", href="/CSS/animaciones.css")
         title Pizzeria K'an'in
     body
         header.header
@@ -30,12 +31,12 @@ html(lang="es")
                 .frase 
                     P El sabor que toca a tu puerta!!!
             .img-pizzas
-                img(src="/imgS/movil/pizza1.png", alt="pizza")
-                img(src="/imgS/movil/pizza2.png", alt="pizza")
-                img(src="/imgS/movil/pizza3.png", alt="pizza")
-                img(src="/imgS/movil/pizza4.png", alt="pizza")
-                img(src="/imgS/movil/pizza5.png", alt="pizza")
-                img(src="/imgS/movil/pizza7.png", alt="pizza")
+                img.animate(src="/imgS/movil/pizza1.png", alt="pizza")
+                img.animate(src="/imgS/movil/pizza2.png", alt="pizza")
+                img.animate(src="/imgS/movil/pizza3.png", alt="pizza")
+                img.animate(src="/imgS/movil/pizza4.png", alt="pizza")
+                img.animate(src="/imgS/movil/pizza5.png", alt="pizza")
+                img.animate(src="/imgS/movil/pizza7.png", alt="pizza")
             section.main-pizzas
                 .main-pizzas_container
                     h2.p#PIZZAS PIZZAS
@@ -255,3 +256,5 @@ html(lang="es")
                         i.fas.fa-laptop-code
                     .cont-kukulkan 
                         img.kukulkan(src="/imgS/kukulkan.png", alt="serpiente emplumada kukulkan")
+        script(src="/index.js") 
+         
