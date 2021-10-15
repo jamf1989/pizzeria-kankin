@@ -6,6 +6,8 @@ function mostrarScroll() {
         let alturaAnimado = animado[i].offsetTop;
         if (alturaAnimado < scrollTop) {
             animado[i].style.opacity = 1;
+            animado[i].classList.add("mostrar");
+
         }
     }
 }
