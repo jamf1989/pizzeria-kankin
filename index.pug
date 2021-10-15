@@ -10,12 +10,13 @@ html(lang="es")
         <script src="https://kit.fontawesome.com/09ed2e842d.js" crossorigin="anonymous"></script>
         link(rel="stylesheet", href="/CSS/style.css")
         link(rel="stylesheet", href="/CSS/animaciones.css")
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         title Pizzeria K'an'in
     body
         header.header
             section.header-titulo 
                     img.logo(src="./imgs/logo.png", alt="logo pizzeria")
-                    img.nombre(src="./asset/nombre.svg", alt="nombre pizzeria")
+                    img.nombre.animate__rotateInDownRight(src="./asset/nombre.svg", alt="nombre pizzeria")
             section.header-nav 
                 nav.header-nav_enlaces
                     ul
