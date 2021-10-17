@@ -4,19 +4,18 @@ html(lang="es")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/09ed2e842d.js" crossorigin="anonymous"></script>
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap" rel="stylesheet")
         link(rel="stylesheet", href="/CSS/style.css")
         link(rel="stylesheet", href="/CSS/animaciones.css")
-        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
         title Pizzeria K'an'in
     body
         header.header
             section.header-titulo 
-                    img.logo(src="./imgs/logo.png", alt="logo pizzeria")
-                    img.nombre.animate__rotateInDownRight(src="./asset/nombre.svg", alt="nombre pizzeria")
+                    img.logo.animate__animated.animate__bounceInLeft(src="./imgs/logo.png", alt="logo pizzeria")
+                    img.nombre.animate__animated.animate__rotateInDownRight(src="./asset/nombre.svg", alt="nombre pizzeria")
             section.header-nav 
                 nav.header-nav_enlaces
                     ul
@@ -28,7 +27,7 @@ html(lang="es")
             section.main-titulo 
                 .izamal 
                     h1 Las mejores PIZZAS de IZAMAL
-                    i.fas.fa-heart
+                    i.fas.fa-heart.animate__animated.animate__zoomIn
                 .frase 
                     P El sabor que toca a tu puerta!!!
             .img-pizzas
@@ -257,5 +256,6 @@ html(lang="es")
                         i.fas.fa-laptop-code
                     .cont-kukulkan 
                         img.kukulkan(src="/imgS/kukulkan.png", alt="serpiente emplumada kukulkan")
+                    a(href="https://es.vecteezy.com/vectores-gratis/maya") Maya Vectores por Vecteezy
         script(src="/index.js") 
-         
+        script(src="https://kit.fontawesome.com/09ed2e842d.js" crossorigin="anonymous") 
