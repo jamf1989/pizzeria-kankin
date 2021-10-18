@@ -151,7 +151,7 @@ a {
             content: '';
             position: absolute;
             width: 95%;
-            height: 1870px;
+            height: 1885px;
             background-color: $color-fondo;
             opacity: $opacity;
             border-radius: 10px;
@@ -218,18 +218,17 @@ a {
                 }
             }
         }
-    }
-    
+    }  
     &-ovnis {
         width: 95%;
-        height: 100%;
+        height: auto;
         margin: 10px auto 0;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
         &::before {
             content: '';
             position: absolute;
             width: 95%;
-            height: 1490px;
+            height: 1545px;
             background-color: $color-fondo;
             opacity: $opacity;
             border-radius: 10px;
@@ -259,7 +258,43 @@ a {
                     text-align: center;
                 }   
             }
-
+            .ovnis {
+                width: 300px;
+                display: flex;    
+                height: auto;
+                align-items: flex-end;
+                margin: 10px 0 10px;
+                img {
+                    width: 80px;
+                    height: 60px;
+                    z-index: 2;
+            
+                }
+                &-container {
+                    position: relative;
+                    padding: 5px;
+                    background: $fonfo-pizzas;
+                    left: -40px;
+                    border: 2px solid black;
+                    border-radius: 10px;
+                }
+                &-nombre {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 1.8rem;
+                    font-weight: 900;
+                    text-align: center;
+                }
+            
+                &-ingredientes {
+                    padding-left: 35px;
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    text-align: left;
+                }
+            }
         }
     }
 }
@@ -285,43 +320,7 @@ a {
      }
 }
 
-.ovnis {
-    width: 300px;
-    display: flex;    
-    height: auto;
-    align-items: flex-end;
-    margin: 10px 0 10px;
-    img {
-        width: 80px;
-        height: 60px;
-        z-index: 2;
 
-    }
-    &-container {
-        position: relative;
-        padding: 5px;
-        background: $fonfo-pizzas;
-        left: -40px;
-        border: 2px solid black;
-        border-radius: 10px;
-    }
-    &-nombre {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 1.8rem;
-        font-weight: 900;
-        text-align: center;
-    }
-
-    &-ingredientes {
-        padding-left: 35px;
-        font-size: 1.6rem;
-        font-weight: 600;
-        text-align: left;
-    }
-}
 
 
 
