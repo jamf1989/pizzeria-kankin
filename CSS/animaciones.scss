@@ -7,6 +7,20 @@
     animation: mostrarPizza 1s;
 }
 
+.ocultarrOvni {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.transform_up{
+    transform: translateY(20%);
+}
+
+.mostrarOvni {
+    opacity: 1;
+    transform: none;
+}
+
 @keyframes mostrarPizza {
     0% {
         transform: translateY(60px);
