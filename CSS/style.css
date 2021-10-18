@@ -161,7 +161,6 @@ a {
   width: 95%;
   height: auto;
   margin: 0 auto 50px;
-  position: relative;
 }
 .main-pizzas::before {
   content: "";
@@ -194,7 +193,6 @@ a {
   font-size: 1.8rem;
   font-weight: 900;
   letter-spacing: 1rem;
-  border-bottom: 1px solid black;
 }
 .main-pizzas_container .pizza {
   width: 300px;

@@ -147,7 +147,6 @@ a {
         width: 95%;
         height: auto;
         margin: 0 auto 50px;
-        position: relative;
         &::before {
             content: '';
             position: absolute;
@@ -171,7 +170,6 @@ a {
                 font-size: 1.8rem;
                 font-weight: 900;
                 letter-spacing: 1rem;
-                border-bottom: 1px solid black;
             }
             .pizza {
                 width: 300px;
