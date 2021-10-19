@@ -1,18 +1,7 @@
-.animate {
-  opacity: 0;
+.animacion {
+  opacity: 0.5;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
-}
-
-.mostrar {
-  -webkit-animation: mostrarPizza 1s;
-          animation: mostrarPizza 1s;
-}
-
-.ocultarrOvni {
-  opacity: 0.5;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 .transform_up {
@@ -20,30 +9,21 @@
           transform: translateY(20%);
 }
 
-.mostrarOvni {
+.mostrar {
   opacity: 1;
   -webkit-transform: none;
           transform: none;
 }
 
-@-webkit-keyframes mostrarPizza {
-  0% {
-    -webkit-transform: translateY(60px);
-            transform: translateY(60px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+/*.mostrar {
+    animation: mostrarPizza 1s;
 }
 
 @keyframes mostrarPizza {
-  0% {
-    -webkit-transform: translateY(60px);
-            transform: translateY(60px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
+    0% {
+        transform: translateY(60px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}*/

@@ -1,24 +1,19 @@
-.animate {
-    opacity: 0;
-    transition: all 0.8s;
-}
-
-.mostrar {
-    animation: mostrarPizza 1s;
-}
-
-.ocultarrOvni {
+.animacion {
     opacity: 0.5;
-    transition: all 0.5s;
+    transition: all 0.8s;
 }
 
 .transform_up{
     transform: translateY(20%);
 }
 
-.mostrarOvni {
+.mostrar {
     opacity: 1;
     transform: none;
+}
+
+/*.mostrar {
+    animation: mostrarPizza 1s;
 }
 
 @keyframes mostrarPizza {
@@ -28,4 +23,4 @@
     100% {
         transform: translateY(0);
     }
-}
+}*/
