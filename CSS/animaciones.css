@@ -9,6 +9,22 @@
           transform: translateY(20%);
 }
 
+.imgpizza {
+  opacity: 0;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.pizza-right {
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+}
+
+.pizza-left {
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+
 .mostrar {
   opacity: 1;
   -webkit-transform: none;

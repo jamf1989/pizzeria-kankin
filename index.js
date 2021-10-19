@@ -36,7 +36,7 @@ window.addEventListener('scroll', function(){
     for(i = 0; i < elemento.length; i++){
         let altura = window.innerHeight/1.3;
         let distancia = elemento[i].getBoundingClientRect().top;
-        console.log(distancia, altura);
+        
         elemento[i].classList.add('transform_up');
         if(distancia <= altura){
             elemento[i].classList.add('mostrar');
@@ -44,4 +44,25 @@ window.addEventListener('scroll', function(){
             elemento[i].classList.remove('mostrar')
         }
     }
+})
+
+window.addEventListener('scroll', function(){
+
+    function fade(direction){
+        let pizza = document.querySelectorAll('.move-'+direction);
+        for(i = 0; i < pizza.length; i++){
+            let altura = window.innerHeight/3.5;
+            console.log(altura);
+            let distancia = pizza[i].getBoundingClientRect().top;
+            pizza[i].classList.add('pizza-'+direction);
+            if(distancia <= altura){
+                pizza[i].classList.add('mostrar');
+            } else {
+                pizza[i].classList.remove('mostrar')
+            }
+        }
+    }
+    fade('right')
+    fade('left')
+    
 })

@@ -344,6 +344,7 @@ a {
 .img-pizzas {
   position: absolute;
   width: 100%;
+  height: 1800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,7 +352,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /*right: 0;*/
+  padding-top: 60px;
   z-index: 1;
 }
 .img-pizzas img {
