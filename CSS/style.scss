@@ -198,9 +198,8 @@ a {
                     max-height: 75%;
                     padding: 3px 3px 3px 10px;
                     left: -19px;
-                    border-top: 2px solid black;
-                    border-bottom: 2px solid black;
-                    border-right: 2px solid black;
+                    border: 2px solid black;
+                    box-shadow: 2.5px 3px black;
                     border-radius: 5px;
                     background-color: $fonfo-pizzas;
                     z-index: 1;
@@ -276,6 +275,7 @@ a {
                     background: $fonfo-pizzas;
                     left: -40px;
                     border: 2px solid black;
+                    box-shadow: 2.5px 3px black;
                     border-radius: 10px;
                 }
                 &-nombre {
