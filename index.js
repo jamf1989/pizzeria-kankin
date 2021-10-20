@@ -1,34 +1,3 @@
-//let animado = document.querySelectorAll(".animate");
-
-//function mostrarScroll() {
-//    let scrollTop = document.documentElement.scrollTop;
-//    for (let i=0; i < animado.length; i++) {
-//        let alturaAnimado = animado[i].offsetTop;
-//        if (alturaAnimado < scrollTop) {
-//            animado[i].style.opacity = 1;
-//            animado[i].classList.add("mostrar");
-//
-//        }
-//    }
-//}
-
-//window.addEventListener('scroll', mostrarScroll);
-
-//window.addEventListener('scroll', function(){
-//    let animacion = document.querySelectorAll('.animacion');
-//    for(let i = 0; i - animacion.length; i++){
-//        let altura = window.innerHeight/1.3;
-//        let distancia = animacion[i].getBoundingClientRect().top;
-//        animacion[i].classList.add('transform_up');
-//        if(distancia <= altura){
-//            animacion[i].classList.add('mostrarOvni');
-//        }
-//        else {
-//            animacion[i].classList.remove('mostrarOvni');
-//        }
-//    }
-//}) 
-
 window.addEventListener('scroll', function(){
     
     let elemento = document.querySelectorAll('.animacion');
@@ -52,7 +21,7 @@ window.addEventListener('scroll', function(){
         let pizza = document.querySelectorAll('.move-'+direction);
         for(i = 0; i < pizza.length; i++){
             let altura = window.innerHeight/3.5;
-            console.log(altura);
+            
             let distancia = pizza[i].getBoundingClientRect().top;
             pizza[i].classList.add('pizza-'+direction);
             if(distancia <= altura){
@@ -65,4 +34,22 @@ window.addEventListener('scroll', function(){
     fade('right')
     fade('left')
     
+})
+
+window.addEventListener('scroll', function(){
+    
+    let footer = document.querySelectorAll('.animacionFooter');
+    
+    for(i = 0; i < footer.length; i++){
+        let altura = window.innerHeight/1.1;
+        let distancia = footer[i].getBoundingClientRect().top;
+        console.log(altura);
+        console.log(distancia);
+        footer[i].classList.add('transform_up');
+        if(distancia <= altura){
+            footer[i].classList.add('mostrar');
+        } else {
+            footer[i].classList.remove('mostrar')
+        }
+    }
 })

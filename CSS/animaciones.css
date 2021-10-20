@@ -25,6 +25,12 @@
           transform: translateX(-20%);
 }
 
+.animacionFooter {
+  opacity: 0.5;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
 .mostrar {
   opacity: 1;
   -webkit-transform: none;
