@@ -5,21 +5,6 @@
 4. Visuales
 5. Otros
 */
-/*@function rad($number){
-    @return $number * 3.141592 / 180;
-}
-
-@function explosion($number,$radio) {
-    $angle: 360 / $number;
-    $text-shadow: '';
-    @for $i from 0 through $number {
-        $text-shadow: $text-shadow + $radio * cos(rad($angle * $i)) + ' ' + $radio * sin(rad($angle * $i));
-        @if $i < $number { $text-shadow: $text-shadow + ','}
-    }
-
-    @return unquote($text-shadow)
-
-}*/
 * {
   margin: 0;
   padding: 0;
@@ -45,7 +30,7 @@ a {
   width: 100%;
   height: 10px;
   border-radius: 10px;
-  background-image: url(../asset/grecas.png);
+  background-image: url("../asset/grecas.png");
   background-size: contain;
   background-repeat: repeat-x;
 }
