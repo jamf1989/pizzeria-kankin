@@ -52,7 +52,7 @@ a {
     width: 100%;
     height: 10px;
     border-radius: 10px;
-    background-image: url(/asset/grecas.png);
+    background-image: url(../asset/grecas.png);
     background-size: contain;
     background-repeat: repeat-x;
 }
@@ -107,7 +107,7 @@ a {
 .main {
     width: 100%;
     height: auto;
-    background-image: url('/imgs/fondomovil.jpg');
+    background-image: url('../imgS/fondomovil.jpg');
     background-repeat: repeat;
     opacity: .80;
     &-titulo {
