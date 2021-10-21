@@ -74,8 +74,8 @@ a {
   height: 70px;
 }
 .header-titulo .nombre {
-  width: 230px;
-  height: 35px;
+  width: 300px;
+  height: 40px;
 }
 .header-nav {
   width: 100%;
@@ -441,8 +441,8 @@ a {
   height: 50px;
 }
 .footer-link .footer-logo .nombre {
-  width: 150px;
-  height: 25px;
+  width: 210px;
+  height: 30px;
 }
 .footer-dev {
   width: 100%;
