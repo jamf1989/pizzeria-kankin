@@ -130,6 +130,7 @@ a {
             font-size: 3rem; 
             color: $border-pizza;
             text-shadow: 1px 4px black;
+            animation: arrowDown 2s ease infinite;
             
         }
     }
@@ -296,6 +297,7 @@ a {
     display: flex;
     flex-direction: column;
     padding-top: 60px;
+    overflow: hidden;
     z-index: 1;
     img {
         width: 250px;

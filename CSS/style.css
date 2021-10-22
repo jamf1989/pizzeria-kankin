@@ -149,6 +149,8 @@ a {
   font-size: 3rem;
   color: #f35a18;
   text-shadow: 1px 4px black;
+  -webkit-animation: arrowDown 2s ease infinite;
+          animation: arrowDown 2s ease infinite;
 }
 .main-pizzas {
   width: 95%;
@@ -348,6 +350,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 60px;
+  overflow: hidden;
   z-index: 1;
 }
 .img-pizzas img {

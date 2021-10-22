@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .animacion {
   opacity: 0.5;
   -webkit-transition: all 0.8s;
@@ -37,15 +38,32 @@
           transform: none;
 }
 
-/*.mostrar {
-    animation: mostrarPizza 1s;
+/*Animación infinita para la flecha*/
+@-webkit-keyframes arrowDown {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
-
-@keyframes mostrarPizza {
-    0% {
-        transform: translateY(60px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}*/
+@keyframes arrowDown {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
