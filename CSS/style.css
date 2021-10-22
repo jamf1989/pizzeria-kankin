@@ -33,6 +33,7 @@ a {
   background-image: url("../asset/grecas.png");
   background-size: contain;
   background-repeat: repeat-x;
+  z-index: 1;
 }
 
 .header {
@@ -103,6 +104,7 @@ a {
 .main {
   width: 100%;
   height: auto;
+  padding-bottom: 20px;
   background-image: url("../imgS/fondomovil.jpg");
   background-repeat: repeat;
   opacity: 0.8;
@@ -348,6 +350,52 @@ a {
   font-size: 1.6rem;
   font-weight: 600;
   text-align: left;
+}
+.main-ingredientes {
+  width: 95%;
+  height: 250px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-ingredientes::before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 250px;
+  background-color: #fae9b5;
+  opacity: 0.5;
+  border-radius: 10px;
+  z-index: 0;
+}
+.main-ingredientes p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  z-index: 1;
+}
+.main-ingredientes .container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  z-index: 1;
 }
 
 .img-pizzas {

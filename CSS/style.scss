@@ -39,6 +39,7 @@ a {
     background-image: url('../asset/grecas.png');
     background-size: contain;
     background-repeat: repeat-x;
+    z-index: 1;
 }
 
 .header {
@@ -97,6 +98,7 @@ a {
 .main {
     width: 100%;
     height: auto;
+    padding-bottom: 20px;
     background-image: url('../imgS/fondomovil.jpg');
     background-repeat: repeat;
     opacity: .80;
@@ -297,6 +299,39 @@ a {
                     text-align: left;
                 }
             }
+        }
+    }
+    &-ingredientes {
+        width: 95%;
+        height: 250px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 95%;
+            height: 250px;
+            background-color: $color-fondo;
+            opacity: $opacity;
+            border-radius: 10px;
+            z-index: 0;
+        }
+        p {
+            font-size: 1.8rem;
+            font-weight: bold;
+            z-index: 1;
+        }
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 600;
+            z-index: 1;
         }
     }
 }
