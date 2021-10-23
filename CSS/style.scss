@@ -303,7 +303,6 @@ a {
     }
     &-ingredientes {
         width: 95%;
-        height: 250px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -313,7 +312,7 @@ a {
             content: '';
             position: absolute;
             width: 95%;
-            height: 250px;
+            height: 290px;
             background-color: $color-fondo;
             opacity: $opacity;
             border-radius: 10px;
@@ -328,10 +327,76 @@ a {
             width: 100%;
             display: flex;
             justify-content: space-evenly;
-            text-align: center;
             font-size: 1.6rem;
             font-weight: 600;
             z-index: 1;
+            .carnes, .vegetales {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .vegetales {
+                align-items: flex-end;
+            }
+
+            .pepperoni::before {
+                content: url('../Ingredientes/008-pepperoni.png');
+                padding-right: 5px;
+            }
+            .jamon::before {
+                content: url('../Ingredientes/002-jamon.png');
+                padding-right: 5px;
+            }
+            .salchicha::before {
+                content: url('../Ingredientes/003-salchichas.png');
+                padding-right: 5px;
+            }
+            .champinon::before {
+                content: url('../Ingredientes/004-champinon.png');
+                padding-right: 5px;
+            }
+            .chorizo::before {
+                content: url('../Ingredientes/005-chorizo.png');
+                padding-right: 5px;
+            }
+            .salami::before {
+                content: url('../Ingredientes/006-salami.png');
+                padding-right: 5px;
+            }
+            .pastor::before {
+                content: url('../Ingredientes/007-trompo.png');
+                padding-right: 5px;
+            }
+            .pina::after {
+                content: url('../Ingredientes/009-pina.png');
+                padding-left: 5px;
+            }
+            .jalapeno::after {
+                content: url('../Ingredientes/010-jalapeno.png');
+                padding-left: 5px;
+            }
+            .cebolla::after {
+                content: url('../Ingredientes/011-cebolla.png');
+                padding-left: 5px;
+            }
+            .tomate::after {
+                content: url('../Ingredientes/001-tomate.png');
+                padding-left: 5px;
+            }
+            .pimiento::after {
+                content: url('../Ingredientes/012-comida-y-restaurante.png');
+                padding-left: 5px;
+            }
+            .guacamole::after {
+                content: url('../Ingredientes/013-guacamole.png');
+                padding-left: 5px;
+            }
+            .chipotle::after {
+                content: url('../Ingredientes/014-chile.png');
+                padding-left: 5px;
+            }
+
+
         }
     }
 }

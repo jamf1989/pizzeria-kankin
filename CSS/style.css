@@ -353,7 +353,6 @@ a {
 }
 .main-ingredientes {
   width: 95%;
-  height: 250px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,7 +372,7 @@ a {
   content: "";
   position: absolute;
   width: 95%;
-  height: 250px;
+  height: 290px;
   background-color: #fae9b5;
   opacity: 0.5;
   border-radius: 10px;
@@ -392,10 +391,79 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
   z-index: 1;
+}
+.main-ingredientes .container .carnes, .main-ingredientes .container .vegetales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main-ingredientes .container .vegetales {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.main-ingredientes .container .pepperoni::before {
+  content: url("../Ingredientes/008-pepperoni.png");
+  padding-right: 5px;
+}
+.main-ingredientes .container .jamon::before {
+  content: url("../Ingredientes/002-jamon.png");
+  padding-right: 5px;
+}
+.main-ingredientes .container .salchicha::before {
+  content: url("../Ingredientes/003-salchichas.png");
+  padding-right: 5px;
+}
+.main-ingredientes .container .champinon::before {
+  content: url("../Ingredientes/004-champinon.png");
+  padding-right: 5px;
+}
+.main-ingredientes .container .chorizo::before {
+  content: url("../Ingredientes/005-chorizo.png");
+  padding-right: 5px;
+}
+.main-ingredientes .container .salami::before {
+  content: url("../Ingredientes/006-salami.png");
+  padding-right: 5px;
+}
+.main-ingredientes .container .pastor::before {
+  content: url("../Ingredientes/007-trompo.png");
+  padding-right: 5px;
+}
+.main-ingredientes .container .pina::after {
+  content: url("../Ingredientes/009-pina.png");
+  padding-left: 5px;
+}
+.main-ingredientes .container .jalapeno::after {
+  content: url("../Ingredientes/010-jalapeno.png");
+  padding-left: 5px;
+}
+.main-ingredientes .container .cebolla::after {
+  content: url("../Ingredientes/011-cebolla.png");
+  padding-left: 5px;
+}
+.main-ingredientes .container .tomate::after {
+  content: url("../Ingredientes/001-tomate.png");
+  padding-left: 5px;
+}
+.main-ingredientes .container .pimiento::after {
+  content: url("../Ingredientes/012-comida-y-restaurante.png");
+  padding-left: 5px;
+}
+.main-ingredientes .container .guacamole::after {
+  content: url("../Ingredientes/013-guacamole.png");
+  padding-left: 5px;
+}
+.main-ingredientes .container .chipotle::after {
+  content: url("../Ingredientes/014-chile.png");
+  padding-left: 5px;
 }
 
 .img-pizzas {
