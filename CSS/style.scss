@@ -6,6 +6,28 @@
 5. Otros
 */
 
+@mixin carnes {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 3px 6px;
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle;
+}
+
+@mixin vegetales {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 3px 6px;
+    background-position: center;
+    background-size: cover;
+    vertical-align: middle;
+}
+
 $color-primario: #F3C186;
 $border-pizza: #f35a18;
 $color-fondo: #fae9b5;
@@ -36,6 +58,7 @@ a {
     position: relative;
     width: 100%;
     height: 10px;
+    margin-top: 10px;
     border-radius: 10px;
     background-image: url('../asset/grecas.png');
     background-size: contain;
@@ -43,7 +66,18 @@ a {
     z-index: 1;
 }
 
+.titulo {
+    position: relative;
+    padding-top: 10px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 1rem;
+    text-align: center;
+    z-index: 3;
+}
+
 .nota {
+    position: relative;
     margin-top: 10px;
     padding: 2px;
     font-size: 1.4rem;
@@ -111,7 +145,6 @@ a {
 .main {
     width: 100%;
     height: auto;
-    padding-bottom: 20px;
     background-image: url('../imgS/fondomovil.jpg');
     background-repeat: repeat;
     opacity: .80;
@@ -172,11 +205,6 @@ a {
             margin: 0 auto;
             padding: 5px 0 0;
             z-index: 3;
-            .p {
-                font-size: 1.8rem;
-                font-weight: 900;
-                letter-spacing: 1rem;
-            }
             .pizza {
                 width: 300px;
                 height: auto;
@@ -250,12 +278,6 @@ a {
                 width: 95%;
                 margin: 0 auto;
                 text-align: center;
-                
-                h2 {
-                    font-size: 1.8rem;
-                    letter-spacing: 1rem;
-                    font-weight: 900;
-                }
                 p {
                     font-size: 1.5rem;
                     letter-spacing: .1rem;
@@ -304,24 +326,21 @@ a {
         }
     }
     &-ingredientes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 95%;
         margin: 0 auto;
+        padding-bottom: 50px;
         &::before {
             content: '';
             position: absolute;
             width: 95%;
-            height: 330px;
+            height: 360px;
             background-color: $color-fondo;
             opacity: $opacity;
             border-radius: 10px;
             z-index: 0;
-        }
-        p {
-            position: relative;
-            font-size: 1.8rem;
-            font-weight: bold;
-            text-align: center;
-            z-index: 1;
         }
         .container {
             position: relative;
@@ -331,71 +350,66 @@ a {
             font-size: 1.6rem;
             font-weight: 600;
             z-index: 2;
-            .carnes {
-                vertical-align: middle;
-                text-align: left;
-            }
 
             .vegetales {
-                vertical-align: middle;
                 text-align: end;
             }
 
             .pepperoni::before {
-                content: url('../Ingredientes/008-pepperoni.png');
-                padding-right: 5px;
+                background-image: url('../Ingredientes/008-pepperoni.png');
+                @include carnes();
             }
             .jamon::before {
-                content: url('../Ingredientes/002-jamon.png');
-                padding-right: 5px;
+                background-image: url('../Ingredientes/002-jamon.png');
+                @include carnes();
             }
             .salchicha::before {
-                content: url('../Ingredientes/003-salchichas.png');
-                padding-right: 5px;
+                background-image: url('../Ingredientes/003-salchichas.png');
+                @include carnes();
             }
             .champinon::before {
-                content: url('../Ingredientes/004-champinon.png');
-                padding-right: 5px;
+                background-image: url('../Ingredientes/004-champinon.png');
+                @include carnes();
             }
             .chorizo::before {
-                content: url('../Ingredientes/005-chorizo.png');
-                padding-right: 5px;
+                background-image: url('../Ingredientes/005-chorizo.png');
+                @include carnes();
             }
             .salami::before {
-                content: url('../Ingredientes/006-salami.png');
-                padding-right: 5px;
+                background-image: url('../Ingredientes/006-salami.png');
+                @include carnes();
             }
             .pastor::before {
-                content: url('../Ingredientes/007-trompo.png');
-                padding-right: 5px;
+                background-image: url('../Ingredientes/007-trompo.png');
+                @include carnes();
             }
             .pina::after {
-                content: url('../Ingredientes/009-pina.png');
-                padding-left: 5px;
+                background-image: url('../Ingredientes/009-pina.png');
+                @include vegetales();
             }
             .jalapeno::after {
-                content: url('../Ingredientes/010-jalapeno.png');
-                padding-left: 5px;
+                background-image: url('../Ingredientes/010-jalapeno.png');
+                @include vegetales();
             }
             .cebolla::after {
-                content: url('../Ingredientes/011-cebolla.png');
-                padding-left: 5px;
+                background-image: url('../Ingredientes/011-cebolla.png');
+                @include vegetales();
             }
             .tomate::after {
-                content: url('../Ingredientes/001-tomate.png');
-                padding-left: 5px;
+                background-image: url('../Ingredientes/001-tomate.png');
+                @include vegetales();
             }
             .pimiento::after {
-                content: url('../Ingredientes/012-comida-y-restaurante.png');
-                padding-left: 5px;
+                background-image: url('../Ingredientes/012-comida-y-restaurante.png');
+                @include vegetales();
             }
             .guacamole::after {
-                content: url('../Ingredientes/013-guacamole.png');
-                padding-left: 5px;
+                background-image: url('../Ingredientes/013-guacamole.png');
+                @include vegetales();
             }
             .chipotle::after {
-                content: url('../Ingredientes/014-chile.png');
-                padding-left: 5px;
+                background-image: url('../Ingredientes/014-chile.png');
+                @include vegetales();
             }
 
 

@@ -30,6 +30,7 @@ a {
   position: relative;
   width: 100%;
   height: 10px;
+  margin-top: 10px;
   border-radius: 10px;
   background-image: url("../asset/grecas.png");
   background-size: contain;
@@ -37,7 +38,18 @@ a {
   z-index: 1;
 }
 
+.titulo {
+  position: relative;
+  padding-top: 10px;
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 1rem;
+  text-align: center;
+  z-index: 3;
+}
+
 .nota {
+  position: relative;
   margin-top: 10px;
   padding: 2px;
   font-size: 1.4rem;
@@ -118,7 +130,6 @@ a {
 .main {
   width: 100%;
   height: auto;
-  padding-bottom: 20px;
   background-image: url("../imgS/fondomovil.jpg");
   background-repeat: repeat;
   opacity: 0.8;
@@ -199,11 +210,6 @@ a {
   margin: 0 auto;
   padding: 5px 0 0;
   z-index: 3;
-}
-.main-pizzas_container .p {
-  font-size: 1.8rem;
-  font-weight: 900;
-  letter-spacing: 1rem;
 }
 .main-pizzas_container .pizza {
   width: 300px;
@@ -295,11 +301,6 @@ a {
   margin: 0 auto;
   text-align: center;
 }
-.main-ovnis_container .main-ovnis_titulo h2 {
-  font-size: 1.8rem;
-  letter-spacing: 1rem;
-  font-weight: 900;
-}
 .main-ovnis_container .main-ovnis_titulo p {
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
@@ -354,25 +355,29 @@ a {
   text-align: left;
 }
 .main-ingredientes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 95%;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 .main-ingredientes::before {
   content: "";
   position: absolute;
   width: 95%;
-  height: 330px;
+  height: 360px;
   background-color: #fae9b5;
   opacity: 0.5;
   border-radius: 10px;
   z-index: 0;
-}
-.main-ingredientes p {
-  position: relative;
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-align: center;
-  z-index: 1;
 }
 .main-ingredientes .container {
   position: relative;
@@ -386,69 +391,162 @@ a {
   font-weight: 600;
   z-index: 2;
 }
-.main-ingredientes .container .carnes {
-  vertical-align: middle;
-  text-align: left;
-}
 .main-ingredientes .container .vegetales {
-  vertical-align: middle;
   text-align: end;
 }
 .main-ingredientes .container .pepperoni::before {
-  content: url("../Ingredientes/008-pepperoni.png");
-  padding-right: 5px;
+  background-image: url("../Ingredientes/008-pepperoni.png");
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 3px 6px;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
 }
 .main-ingredientes .container .jamon::before {
-  content: url("../Ingredientes/002-jamon.png");
-  padding-right: 5px;
+  background-image: url("../Ingredientes/002-jamon.png");
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 3px 6px;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
 }
 .main-ingredientes .container .salchicha::before {
-  content: url("../Ingredientes/003-salchichas.png");
-  padding-right: 5px;
+  background-image: url("../Ingredientes/003-salchichas.png");
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 3px 6px;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
 }
 .main-ingredientes .container .champinon::before {
-  content: url("../Ingredientes/004-champinon.png");
-  padding-right: 5px;
+  background-image: url("../Ingredientes/004-champinon.png");
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 3px 6px;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
 }
 .main-ingredientes .container .chorizo::before {
-  content: url("../Ingredientes/005-chorizo.png");
-  padding-right: 5px;
+  background-image: url("../Ingredientes/005-chorizo.png");
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 3px 6px;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
 }
 .main-ingredientes .container .salami::before {
-  content: url("../Ingredientes/006-salami.png");
-  padding-right: 5px;
+  background-image: url("../Ingredientes/006-salami.png");
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 3px 6px;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
 }
 .main-ingredientes .container .pastor::before {
-  content: url("../Ingredientes/007-trompo.png");
-  padding-right: 5px;
+  background-image: url("../Ingredientes/007-trompo.png");
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 3px 6px;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
 }
 .main-ingredientes .container .pina::after {
-  content: url("../Ingredientes/009-pina.png");
-  padding-left: 5px;
+  background-image: url("../Ingredientes/009-pina.png");
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 3px 6px;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
 }
 .main-ingredientes .container .jalapeno::after {
-  content: url("../Ingredientes/010-jalapeno.png");
-  padding-left: 5px;
+  background-image: url("../Ingredientes/010-jalapeno.png");
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 3px 6px;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
 }
 .main-ingredientes .container .cebolla::after {
-  content: url("../Ingredientes/011-cebolla.png");
-  padding-left: 5px;
+  background-image: url("../Ingredientes/011-cebolla.png");
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 3px 6px;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
 }
 .main-ingredientes .container .tomate::after {
-  content: url("../Ingredientes/001-tomate.png");
-  padding-left: 5px;
+  background-image: url("../Ingredientes/001-tomate.png");
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 3px 6px;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
 }
 .main-ingredientes .container .pimiento::after {
-  content: url("../Ingredientes/012-comida-y-restaurante.png");
-  padding-left: 5px;
+  background-image: url("../Ingredientes/012-comida-y-restaurante.png");
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 3px 6px;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
 }
 .main-ingredientes .container .guacamole::after {
-  content: url("../Ingredientes/013-guacamole.png");
-  padding-left: 5px;
+  background-image: url("../Ingredientes/013-guacamole.png");
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 3px 6px;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
 }
 .main-ingredientes .container .chipotle::after {
-  content: url("../Ingredientes/014-chile.png");
-  padding-left: 5px;
+  background-image: url("../Ingredientes/014-chile.png");
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 3px 6px;
+  background-position: center;
+  background-size: cover;
+  vertical-align: middle;
 }
 
 .img-pizzas {
