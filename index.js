@@ -43,8 +43,6 @@ window.addEventListener('scroll', function(){
     for(i = 0; i < footer.length; i++){
         let altura = window.innerHeight/1.1;
         let distancia = footer[i].getBoundingClientRect().top;
-        console.log(altura);
-        console.log(distancia);
         footer[i].classList.add('transform_up');
         if(distancia <= altura){
             footer[i].classList.add('mostrar');
@@ -52,4 +50,26 @@ window.addEventListener('scroll', function(){
             footer[i].classList.remove('mostrar')
         }
     }
+})
+
+
+window.addEventListener('scroll', function(){
+
+    function slide(direction){
+        let ingrediente = document.querySelectorAll('.slide-'+direction);
+        for(i = 0; i < ingrediente.length; i++){
+            let altura = window.innerHeight/1.1;
+            
+            let distancia = ingrediente[i].getBoundingClientRect().top;
+            ingrediente[i].classList.add('pizza-'+direction);
+            if(distancia <= altura){
+                ingrediente[i].classList.add('mostrar');
+            } else {
+                ingrediente[i].classList.remove('mostrar')
+            }
+        }
+    }
+    slide('right')
+    slide('left')
+    
 })

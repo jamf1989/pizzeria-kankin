@@ -1,6 +1,12 @@
 @charset "UTF-8";
-.animacion {
+.animacion, .animacionFooter, .ingredientes {
   opacity: 0.5;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.imgpizza {
+  opacity: 0;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
@@ -8,12 +14,6 @@
 .transform_up {
   -webkit-transform: translateY(20%);
           transform: translateY(20%);
-}
-
-.imgpizza {
-  opacity: 0;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
 }
 
 .pizza-right {
@@ -24,12 +24,6 @@
 .pizza-left {
   -webkit-transform: translateX(-20%);
           transform: translateX(-20%);
-}
-
-.animacionFooter {
-  opacity: 0.5;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
 }
 
 .mostrar {

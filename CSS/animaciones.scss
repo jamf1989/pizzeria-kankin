@@ -1,16 +1,15 @@
-.animacion {
+.animacion, .animacionFooter, .ingredientes{
     opacity: 0.5;
+    transition: all 0.8s;
+}
+
+.imgpizza {
+    opacity: 0;
     transition: all 0.8s;
 }
 
 .transform_up{
     transform: translateY(20%);
-}
-
-
-.imgpizza {
-    opacity: 0;
-    transition: all 0.8s;
 }
 
 .pizza-right {
@@ -21,15 +20,11 @@
     transform: translateX(-20%);
 }
 
-.animacionFooter {
-    opacity: 0.5;
-    transition: all 0.8s;
-}
-
 .mostrar {
     opacity: 1;
     transform: none;
 }
+
 
 /*Animación infinita para la flecha*/
 
