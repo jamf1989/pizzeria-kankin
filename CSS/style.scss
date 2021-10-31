@@ -460,7 +460,7 @@ a {
         content: '';
         position: absolute;
         width: 95%;
-        height: 225px;
+        height: 180px;
         background-color: $color-fondo;
         opacity: $opacity;
         border-radius: 10px;
@@ -482,6 +482,10 @@ a {
             justify-content: center;
             align-items: center;
             width: 100%;
+            img {
+                width: 200px;
+                height: 80px;
+            }
         }
     }
 }
