@@ -451,6 +451,41 @@ a {
      }
 }
 
+.main-promociones {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 95%;
+        height: 225px;
+        background-color: $color-fondo;
+        opacity: $opacity;
+        border-radius: 10px;
+        z-index: 0;
+    }
+    .contenido {
+        position: relative;
+        width: 100%;
+        padding: 5px;
+        z-index: 1;
+        p {
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .delivery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    }
+}
+
 .footer {
     width: 100%;
     height: auto;
