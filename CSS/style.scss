@@ -491,6 +491,18 @@ a {
                 font-size: 1.5rem;
                 font-weight: 600;
                 padding-bottom: 10px;
+                display: flex;
+                justify-content: space-evenly;
+                
+            }
+            .arrowR::after {
+                content: '';
+                background-image: url(../asset/right-arrow.png);
+                background-position: center;
+                background-size: cover;
+                display: inline-block;
+                width: 25px;
+                height: 25px;
             }
             p:nth-child(3){
                 font-size: 1.6rem;
