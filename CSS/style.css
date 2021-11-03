@@ -595,44 +595,56 @@ a {
   height: auto;
   margin: 0 auto;
   padding-bottom: 30px;
+  padding-top: 10px;
 }
 .main-promociones::before {
   content: "";
   position: absolute;
   width: 95%;
-  height: 180px;
+  height: 240px;
   background-color: #fae9b5;
   opacity: 0.5;
   border-radius: 10px;
   z-index: 0;
 }
+.main-promociones .promociones {
+  position: relative;
+  padding: 5px;
+}
 .main-promociones .contenido {
   position: relative;
-  width: 100%;
-  padding: 5px;
-  z-index: 1;
-}
-.main-promociones .contenido p {
-  font-size: 1.8rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-align: center;
-}
-.main-promociones .contenido .delivery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
+  padding: 5px;
+  z-index: 1;
 }
-.main-promociones .contenido .delivery img {
-  width: 200px;
-  height: 80px;
+.main-promociones .contenido .delivery {
+  text-align: center;
+  margin: auto;
+}
+.main-promociones .contenido .delivery p:nth-child(1) {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding-bottom: 10px;
+}
+.main-promociones .contenido .delivery p:nth-child(2) {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.main-promociones .contenido .delivery p:nth-child(3) {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.main-promociones .contenido img {
+  width: 80px;
+  height: 190px;
 }
 
 .footer {
