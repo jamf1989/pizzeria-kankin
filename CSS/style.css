@@ -85,19 +85,19 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .header-titulo .logo {
-  width: 75px;
+  width: 70px;
   height: 70px;
 }
 .header-titulo .nombre {
-  width: 300px;
+  width: 240px;
   height: 40px;
 }
 .header-nav {
@@ -286,7 +286,7 @@ a {
   content: "";
   position: absolute;
   width: 95%;
-  height: 1545px;
+  height: 1580px;
   background-color: #fae9b5;
   opacity: 0.5;
   border-radius: 10px;
@@ -628,13 +628,13 @@ a {
   margin: auto;
 }
 .main-promociones .contenido .delivery p:nth-child(1) {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 900;
   padding-bottom: 10px;
 }
 .main-promociones .contenido .delivery p:nth-child(2) {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   padding-bottom: 10px;
   display: -webkit-box;
@@ -650,11 +650,12 @@ a {
   background-position: center;
   background-size: cover;
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 20px;
+  padding-left: 5px;
 }
 .main-promociones .contenido .delivery p:nth-child(3) {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 .main-promociones .contenido img {
@@ -732,7 +733,7 @@ a {
   height: 50px;
 }
 .footer-link .footer-logo .nombre {
-  width: 210px;
+  width: 180px;
   height: 30px;
 }
 .footer-dev {
