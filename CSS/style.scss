@@ -288,6 +288,7 @@ a {
             background-color: $color-fondo;
             opacity: $opacity;
             border-radius: 10px;
+            z-index: 2;
             @media (min-width: 900px) {
                 display: none;
             }
@@ -300,6 +301,7 @@ a {
             display: flex;
             flex-direction: column;
             align-items: center;
+            z-index: 3;
             .main-ovnis_titulo {
                 width: 95%;
                 margin: 0 auto;
@@ -460,6 +462,8 @@ a {
     position: absolute;
     width: 95%;
     height: auto;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     padding-top: 60px;
@@ -485,6 +489,33 @@ a {
             display: none;
          }
     }
+}
+
+.img-ovnis {
+    position: absolute;
+    width: 95%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    overflow: hidden;
+    z-index: 1;
+    img {
+        width: 250px;
+        height: auto;
+        margin: 15px 0;
+        @media (min-width: 900px) {
+            margin: 0;
+        }
+    }
+    img:nth-child(odd) {
+       align-self: flex-end;
+    }
+    img:nth-child(even) {
+        align-self: flex-start;
+     }
 }
 
 .main-promociones {
