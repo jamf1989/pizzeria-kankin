@@ -670,6 +670,7 @@ a {
   position: relative;
   min-width: 300px;
   scroll-snap-align: center;
+  margin: 0 10px;
   width: 100%;
   height: 430px;
   display: -webkit-box;
@@ -693,6 +694,7 @@ a {
   position: relative;
   min-width: 300px;
   scroll-snap-align: center;
+  margin: 0 10px;
   width: 100%;
   height: 430px;
   display: -webkit-box;

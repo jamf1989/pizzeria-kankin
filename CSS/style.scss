@@ -506,6 +506,7 @@ a {
                 position: relative;
                 min-width: 300px;
                 scroll-snap-align: center;
+                margin: 0 10px;
                 @include complementos();
                 img {
                     width: 300px;    
@@ -515,6 +516,7 @@ a {
                 position: relative;
                 min-width: 300px;
                 scroll-snap-align: center;
+                margin: 0 10px;
                 @include complementos();
                 .imagenes {
                     width: 100%;
