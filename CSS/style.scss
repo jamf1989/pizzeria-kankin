@@ -30,6 +30,7 @@
 
 @mixin complementos {
     width: 100%;
+    height: 430px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -468,24 +469,52 @@ a {
         width: 95%;
         height: auto;
         margin: 0 auto;
+        padding-bottom: 30px;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 95%;
+            height: 450px;
+            background-color: $color-fondo;
+            opacity: $opacity;
+            border-radius: 10px;
+            z-index: 2;
+            @media (min-width: 900px) {
+                display: none;
+            }
+        }
         .container {
+            position: relative;
             width: 100%;
+            height: 450px;
             display: flex;
-            flex-direction: column;
-            overflow: hidden;
+            overflow-x: scroll;
+            overscroll-behavior-x: contain;
+            scroll-snap-type: x proximity;
+            z-index: 3;
             .pan{
+                position: relative;
+                min-width: 300px;
+                margin: 0 10px;
+                scroll-snap-align: center;
                 @include complementos();
                 img {
                     width: 300px;    
                 }
             }
             .ovnis {
+                position: relative;
+                min-width: 300px;
+                scroll-snap-align: center;
                 @include complementos();
                 img {
                     width: 300px;    
                 }
             }
             .refresco {
+                position: relative;
+                min-width: 300px;
+                scroll-snap-align: center;
                 @include complementos();
                 .imagenes {
                     width: 100%;

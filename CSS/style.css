@@ -612,20 +612,43 @@ a {
   width: 95%;
   height: auto;
   margin: 0 auto;
+  padding-bottom: 30px;
+}
+.main-complementos::before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 450px;
+  background-color: #fae9b5;
+  opacity: 0.5;
+  border-radius: 10px;
+  z-index: 2;
+}
+@media (min-width: 900px) {
+  .main-complementos::before {
+    display: none;
+  }
 }
 .main-complementos .container {
+  position: relative;
   width: 100%;
+  height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: hidden;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  -ms-scroll-snap-type: x proximity;
+      scroll-snap-type: x proximity;
+  z-index: 3;
 }
 .main-complementos .container .pan {
+  position: relative;
+  min-width: 300px;
+  margin: 0 10px;
+  scroll-snap-align: center;
   width: 100%;
+  height: 430px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -644,7 +667,11 @@ a {
   width: 300px;
 }
 .main-complementos .container .ovnis {
+  position: relative;
+  min-width: 300px;
+  scroll-snap-align: center;
   width: 100%;
+  height: 430px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -663,7 +690,11 @@ a {
   width: 300px;
 }
 .main-complementos .container .refresco {
+  position: relative;
+  min-width: 300px;
+  scroll-snap-align: center;
   width: 100%;
+  height: 430px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
