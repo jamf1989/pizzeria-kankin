@@ -777,7 +777,7 @@ a {
   .img-pizzas, .img-ovnis {
     padding-top: 0;
   }
-  .img-pizzas img:nth-child(5), .img-pizzas img:nth-child(6), .img-ovnis img:nth-child(5), .img-ovnis img:nth-child(6) {
+  .img-pizzas img:nth-child(5), .img-pizzas img:nth-child(6), .img-pizzas img:nth-child(7), .img-ovnis img:nth-child(5), .img-ovnis img:nth-child(6), .img-ovnis img:nth-child(7) {
     display: none;
   }
 }
@@ -906,11 +906,11 @@ a {
           align-items: center;
 }
 .footer-link .fa-facebook-square {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #f35a18;
 }
 .footer-link .fas {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: black;
 }
 .footer-link .fa-map-marker-alt {
@@ -930,7 +930,7 @@ a {
   height: 50px;
 }
 .footer-link .footer-logo .nombre {
-  width: 180px;
+  width: 210px;
   height: 30px;
 }
 .footer-dev {
@@ -995,15 +995,6 @@ a {
     width: 95%;
     height: auto;
     margin: 0 auto;
-    /*.img-pizzas {
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
-        overflow: hidden;
-    }*/
-    /*.img-ovnis {
-        grid-column: 1 / 3;
-        grid-row: 3 / 4;
-    }*/
   }
   .media-queries > *:nth-child(1) {
     -ms-grid-row: 1;
