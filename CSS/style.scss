@@ -502,7 +502,13 @@ a {
                 scroll-snap-align: center;
                 @include complementos();
                 img {
-                    width: 230px;    
+                    width: 280px;    
+                }
+                p:nth-child(3){
+                    font-size: 2rem;
+                    font-weight: 600;
+                    padding-bottom: 10px;
+                    letter-spacing: .2rem;
                 }
             }
             .ovnis {

@@ -105,9 +105,9 @@ a {
   height: 40px;
   padding: 1px;
   border-bottom: 2px solid #f35a18;
-  background: #e5ab67;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e5ab67), to(#f3c186));
-  background: linear-gradient(180deg, #e5ab67 0%, #f3c186 100%);
+  background: rgb(229, 171, 103);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(229, 171, 103)), to(rgb(243, 193, 134)));
+  background: linear-gradient(180deg, rgb(229, 171, 103) 0%, rgb(243, 193, 134) 100%);
 }
 .header-nav_enlaces ul {
   width: 100%;
@@ -667,7 +667,13 @@ a {
           align-items: center;
 }
 .main-complementos .container .pan img {
-  width: 230px;
+  width: 280px;
+}
+.main-complementos .container .pan p:nth-child(3) {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+  letter-spacing: 0.2rem;
 }
 .main-complementos .container .ovnis {
   position: relative;
