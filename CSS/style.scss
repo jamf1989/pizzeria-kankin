@@ -211,7 +211,7 @@ a {
             content: '';
             position: absolute;
             width: 95%;
-            height: 1850px;
+            height: 2100px;
             background-color: $color-fondo;
             opacity: $opacity;
             border-radius: 10px;
@@ -509,6 +509,7 @@ a {
                     font-weight: 600;
                     padding-bottom: 10px;
                     letter-spacing: .2rem;
+                    text-align: center;
                 }
             }
             .ovnis {
